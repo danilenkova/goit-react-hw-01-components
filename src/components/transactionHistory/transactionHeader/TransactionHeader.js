@@ -1,3 +1,5 @@
+import './TransactionHeader.module.css';
+
 const TransactionHeader = ({ title }) => {
   return <th>{title}</th>;
 };

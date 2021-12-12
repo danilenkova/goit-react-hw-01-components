@@ -1,7 +1,7 @@
-import Profile from './components/profile/Profile';
-import Statistics from './components/statistics/Statistics';
-import FriendList from './components/friendList/FriendList';
-import TransactionHistory from './components/transactionHistory/TransactionHistory';
+import Profile from './components/profile';
+import Statistics from './components/statistics';
+import FriendList from './components/friendList';
+import TransactionHistory from './components/transactionHistory';
 import data from './data';
 
 const { user, statistics, friends, transactions } = data;
@@ -9,15 +9,17 @@ const { user, statistics, friends, transactions } = data;
 
 export default function App() {
   return (
-    <div>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-      <Statistics title="Upload stats" statistics={statistics} />
+    <div className="container">
+      <div>
+        <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
+        <Statistics title="Upload stats" statistics={statistics} />
+      </div>
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
     </div>

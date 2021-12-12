@@ -1,17 +1,12 @@
 import PropTypes from 'prop-types';
-import ProfileDescription from './profileDescription/ProfileDescription';
-import StatsList from './stats/statsList/StatsList';
+import ProfileDescription from './profileDescription';
+import StatsList from './statsList';
+import styles from './Profile.module.css';
 
 const Profile = ({ avatar, username, tag, location, stats }) => {
   return (
-    <div>
-      <ProfileDescription
-        username={username}
-        tag={tag}
-        location={location}
-        avatar={avatar}
-        stats={stats}
-      />
+    <div className={styles.profile}>
+      <ProfileDescription username={username} tag={tag} location={location} avatar={avatar} />
       {stats && <StatsList stats={stats} />}
     </div>
   );

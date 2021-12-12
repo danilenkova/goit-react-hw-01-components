@@ -1,0 +1,8 @@
+table {
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  border-collapse: collapse;
+  outline: 1px solid lightgray;
+  overflow: hidden;
+}

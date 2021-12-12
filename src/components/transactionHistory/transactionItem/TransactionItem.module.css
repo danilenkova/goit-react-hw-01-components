@@ -1,0 +1,12 @@
+tbody tr {
+  height: 40px;
+}
+tbody tr:nth-child(even) {
+  background-color: rgb(197, 234, 247);
+}
+tbody td:not(:last-child) {
+  border-right: 2px solid lightgray;
+}
+tbody td:first-child {
+  text-transform: capitalize;
+}

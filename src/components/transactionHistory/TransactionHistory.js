@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
-import TransactionHeader from './transactionHeader/TransactionHeader';
-import TransactionItem from './transactionItem/TransactionItem';
+import TransactionHeader from './transactionHeader';
+import TransactionItem from './transactionItem';
+import './TransactionHistory.module.css';
 
 const TransactionHistory = ({ transactions }) => {
   const titles = Object.keys(transactions[0]).filter(item => item !== 'id');

@@ -1,0 +1,11 @@
+thead {
+  background-color: rgb(131, 198, 221);
+}
+thead th {
+  padding: 10px;
+  height: 40px;
+  text-transform: uppercase;
+}
+thead th:not(:last-child) {
+  border-right: 2px solid lightgray;
+}

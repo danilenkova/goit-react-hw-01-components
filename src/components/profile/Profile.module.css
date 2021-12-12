@@ -1,0 +1,10 @@
+.profile {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+  overflow: hidden;
+}

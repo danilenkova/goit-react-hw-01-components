@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
-import StatsItem from '../statsItem/StatsItems';
+import StatsItem from './statsItem';
+import styles from './StatsList.module.css';
 
 const StatsList = ({ stats }) => {
   const StatsItems = Object.keys(stats);
   return (
-    <ul>
+    <ul className={styles.stats}>
       {StatsItems.map(item => (
         <StatsItem key={item} label={item} quantity={stats[item]} />
       ))}
